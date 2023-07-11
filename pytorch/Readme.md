@@ -1,5 +1,5 @@
 ## Nvidia - Pytorch
-1. Install [Nvidia Docs Pytorch Image pull](https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/running.html)
+1. [Nvidia Docs Pytorch Image pull](https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/running.html)
     ```
     docker pull nvcr.io/nvidia/pytorch:23.06-py3
     ```

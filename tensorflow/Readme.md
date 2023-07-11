@@ -1,5 +1,5 @@
 ## Nvidia - Tensorflow
-1. Install [Nvidia Docs Tensorflow Image pull](https://docs.nvidia.com/deeplearning/frameworks/tensorflow-release-notes/running.html)
+1. [Nvidia Docs Tensorflow Image pull](https://docs.nvidia.com/deeplearning/frameworks/tensorflow-release-notes/running.html)
     ```
     docker pull nvcr.io/nvidia/tensorflow:23.06-tf2-py3
     ```
