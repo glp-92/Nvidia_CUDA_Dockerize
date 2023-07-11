@@ -17,10 +17,10 @@ Tested on Ubuntu 20.04 LTS with Nvidia GTX 1050.
     nvidia-ctk --version
     ```
 
-### Check the following implementations docs:
-- [Tensorflow Cuda Docker DOC](tensorflow/Readme.md)
-- [Pytorch Cuda Docker DOC](pytorch/Readme.md)
-- [YoloV8 Cuda Docker DOC](yolov8/Readme.md)
+### Check the following implementation docs:
+- [Tensorflow Cuda Docker](tensorflow/Readme.md)
+- [Pytorch Cuda Docker](pytorch/Readme.md)
+- [YoloV8 Cuda Docker](yolov8/Readme.md)
 
 ### To do list:
 - Finish current implementations
