@@ -17,12 +17,12 @@ Tested on Ubuntu 20.04 LTS with Nvidia GTX 1050.
     nvidia-ctk --version
     ```
 
-Check the following implementations docs:
+### Check the following implementations docs:
 - [Tensorflow Cuda Docker DOC](tensorflow/Readme.md)
 - [Pytorch Cuda Docker DOC](pytorch/Readme.md)
 - [YoloV8 Cuda Docker DOC](yolov8/Readme.md)
 
-To do list:
+### To do list:
 - Finish current implementations
 - Kubernetes Cluster for highly available infering context
 - Kubernetes Cluster for GPU management
