@@ -1,0 +1,18 @@
+FROM nvcr.io/nvidia/tensorflow:21.04-tf2-py3
+
+# Aditional dependencies if exists
+# RUN apt-get update && apt-get install -y <packagename>
+
+# Copy all files on these folder to /app folder on container
+COPY . /app
+# Change the workdir to /app
+WORKDIR /app
+
+# Install Python dependencies
+# RUN pip install -r requirements.txt
+
+# Expose Flask port 5000
+EXPOSE 5000
+
+# Command to launch the server 'python server.py'
+CMD ["python", "server.py"]

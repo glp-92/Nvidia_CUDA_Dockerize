@@ -1,0 +1,16 @@
+FROM ultralytics/ultralytics:latest
+
+# Instalar dependencias adicionales si las hay
+# RUN apt-get update && apt-get install -y python3-opencv
+
+COPY . /app
+WORKDIR /app
+
+# Instalar las dependencias de Python
+RUN pip install -r requirements.txt
+
+# Exponer el puerto del servidor Flask
+EXPOSE 5000
+
+# Comando para iniciar el servidor
+CMD ["python", "server.py"]
