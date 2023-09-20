@@ -5,9 +5,17 @@ This repository provides implementation paths to dockerize some DL Python framew
 Tested on Ubuntu 20.04 LTS with Nvidia GTX 1050. 
 
 ### Requirements:
-1. [Install Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es) as container manager
+1. [Install Docker](https://docs.docker.com/engine/install/) as container manager. Found some privilege uncompatibilities with Docker Desktop
 
 2. Install [Nvidia Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
+    ```
+    curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+      && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
+        sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+        sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list \
+      && \
+        sudo apt-get update
+    ```
     ```
     sudo apt-get update \
         && sudo apt-get install -y nvidia-container-toolkit-base
