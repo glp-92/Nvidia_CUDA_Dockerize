@@ -18,7 +18,7 @@ Tested on Ubuntu 20.04 LTS with Nvidia GTX 1050.
     ```
     ```
     sudo apt-get update \
-        && sudo apt-get install -y nvidia-container-toolkit-base
+        && sudo apt-get install -y nvidia-container-toolkit
     ```
 3. To confirm succesful install:
     ```
